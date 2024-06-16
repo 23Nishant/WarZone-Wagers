@@ -68,15 +68,15 @@ body {
 
 .duel-game-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     width: 80%;
     margin: 0 auto;
 }
 
 .already-played-list,
 .search-game {
-    width: 100%;
+    width: 40%;
     padding: 1rem;
     border-radius: 5px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
@@ -106,34 +106,6 @@ body {
     text-align: left;
 }
 
-.player-boxes {
-    display: flex;
-    justify-content: space-around; /* Adjust as needed to control spacing */
-    align-items: center;
-    flex-wrap: wrap; /* Allows boxes to wrap to the next line if needed */
-    margin-top: 2rem;
-}
-
-
-
-
-.player-box {
-    width: 25%; /* Each box takes up 25% of the container */
-    padding: 1rem;
-    border-radius: 5px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    margin-bottom: 1rem; /* Adds spacing between boxes */
-}
-y
-
-
-
-.vs {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
 .duel-btn,
 .multiplayer-btn,
 #search-btn {
@@ -157,4 +129,46 @@ y
     padding: 0.5rem;
     width: calc(100% - 1rem);
     margin-bottom: 1rem;
+}
+
+.versus-container {
+    margin-top: 2rem;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box {
+    width: 150px;
+    text-align: center;
+}
+
+.vs-box {
+    width: 60px;
+    text-align: center;
+}
+
+.vs-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffd700;
+    margin: 0;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+}
+
+.image-box p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #fff;
 }
