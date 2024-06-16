@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-bar {
+    background-color: #000; /* Black navigation bar */
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 2px solid #666;
+  }
+  
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .connect-wallet-btn {
+    background-color: #ffd700; /* Golden buttons */
+    color: #000; /* Black text */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add some rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    margin-right: 20px; /* Add a gap between the buttons */
+  }
+  
+  .profile-btn {
+    background-color: #ffd700; /* Golden buttons */
+    color: #000; /* Black text */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add some rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+  }
+  
+  .connect-wallet-btn:hover,
+  .profile-btn:hover {
+    background-color: #ffc107; /* Golden hover effect */
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+  }
+  
+  .background-image video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .game-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+  }
+  
+  .game-title {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+  }
+  
+  .tagline {
+    font-size: 1.5rem;
+    color: #ccc;
+    margin-top: 1rem;
+  }
+  
+  .game-mode-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 2rem;
+  }
+  
+  .duel-btn,
+  .multiplayer-btn {
+    background-color: #ffd700; /* Golden buttons */
+    color: #000; /* Black text */
+    border: none; /* Remove the border */
+    border-radius: 5px; /* Add some rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
+    font-size: 1.5rem; /* Make the buttons slightly bigger */
+    padding: 0.75rem 1.5rem; /* Increase the padding to accommodate the larger size */
+  }
+  
+  .duel-btn:hover,
+  .multiplayer-btn:hover {
+    background-color: #ffc107; /* Golden hover effect */
+  }

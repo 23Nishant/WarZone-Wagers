@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duel Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgvid">
+        <source src="polina.webm" type="video/webm">
+        <source src="game.mp4" type="video/mp4">
+    </video>
+    <main class="main-content">
+        <div class="duel-game-container">
+            <div class="already-played-list">
+                <h2 style="font-size: 2rem;">Already Played</h2>
+                <table style="font-size: 1.5rem;">
+                    <tr>
+                        <td>Game 1: "Epic Battle"</td>
+                    </tr>
+                    <tr>
+                        <td>Game 2: "Warzone Frenzy"</td>
+                    </tr>
+                    <tr>
+                        <td>Game 3: "Battle Royale"</td>
+                    </tr>
+                    <tr>
+                        <td>Game 4: "Duel Masters"</td>
+                    </tr>
+                    <tr>
+                        <td>Game 5: "Warrior's Quest"</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="search-game">
+                <h2 style="font-size: 2rem;">Enter Game Name</h2>
+                <input type="text" id="game-name" style="font-size: 1.5rem; padding: 0.5rem;">
+                <button id="search-btn" style="font-size: 1.5rem; padding: 0.5rem;">Search</button>
+            </div>
+            <div class="player-boxes">
+                <div class="player-box you">
+                    <h3>YOU</h3>
+                    <img src="warzone.png" alt="You">
+                </div>
+                <div class="vs">VS</div>
+                <div class="player-box opponent">
+                    <h3>OPPONENT</h3>
+                    <img src="hell.png" alt="Opponent">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <style>
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        /* .duel-game-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 80%;
+            margin: 0 auto;
+        }
+        .already-played-list {
+            width: 40%;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .search-game {
+            width: 40%;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        .player-boxes {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 2rem;
+        }
+        .player-box {
+            width: 30%;
+            padding: 1rem;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .player-box img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 1rem;
+        }
+        .vs {
+            width: 10%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            font-weight: bold;
+        } */
+    </style>
+</body>
+</html>

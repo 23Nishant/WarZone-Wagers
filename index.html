@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WarZone Wagers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <video autoplay muted loop id="bgvid">
+        <source src="polina.webm" type="video/webm">
+        <source src="game.mp4" type="video/mp4">
+    </video>
+    <nav class="nav-bar">
+        <div class="nav-right">
+            <button class="connect-wallet-btn">Connect Wallet</button>
+            <button class="profile-btn">Profile</button>
+        </div>
+    </nav>
+    <main class="main-content">
+        <div class="game-title-container">
+            <h1 class="game-title">WarZone Wagers</h1>
+            <p class="tagline">Bet. Battle. Conquer.</p>
+        </div>
+        <div class="game-mode-btns">
+            <button class="duel-btn" onclick="location.href='duelgame.html'">Duel Game</button>
+            <button class="multiplayer-btn">Multiplayer Game</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <style>
+        video {
+            object-fit: cover;
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+    </style>
+</body>
+</html>
